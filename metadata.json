@@ -1,0 +1,5 @@
+{
+  "name": "PDF Live Editor",
+  "description": "A real-time PDF editor that allows you to upload, annotate with text, and download modified PDFs directly in your browser.",
+  "requestFramePermissions": []
+}
