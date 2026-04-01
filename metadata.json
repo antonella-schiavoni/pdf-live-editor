@@ -1,5 +1,5 @@
 {
-  "name": "PDF Live Editor",
-  "description": "A real-time PDF editor that allows you to upload, annotate with text, and download modified PDFs directly in your browser.",
+  "name": "Cloud PDF Editor",
+  "description": "A secure, cloud-powered PDF editor with Google Authentication, real-time annotations, and private document storage.",
   "requestFramePermissions": []
 }

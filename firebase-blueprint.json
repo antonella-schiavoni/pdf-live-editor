@@ -1,0 +1,26 @@
+{
+  "entities": {
+    "PdfDocument": {
+      "title": "PDF Document",
+      "description": "Metadata for a PDF document and its annotations",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique ID for the document" },
+        "name": { "type": "string", "description": "File name" },
+        "type": { "type": "string", "description": "Document category (e.g., contract, textbook)" },
+        "numPages": { "type": "integer", "description": "Total number of pages" },
+        "annotations": { "type": "array", "description": "List of annotations" },
+        "pdfUrl": { "type": "string", "description": "URL to the PDF file in Firebase Storage" },
+        "ownerId": { "type": "string", "description": "UID of the user who owns the document" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the document was saved" }
+      },
+      "required": ["id", "name", "type", "numPages", "annotations", "pdfUrl", "ownerId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/documents/{docId}": {
+      "schema": "PdfDocument",
+      "description": "Collection of PDF documents"
+    }
+  }
+}
